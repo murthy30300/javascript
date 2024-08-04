@@ -1,0 +1,95 @@
+* {
+    margin: 10px;
+    padding: 0px;
+}
+
+.left {
+    border: 2px solid black;
+    padding: 30px;
+    width: 250px;
+    height: 700px;
+    background-color: #00173d;
+    border-radius: 25px;
+}
+
+.container {
+    border: 2px solid green;
+    margin-top: 0;
+    background-color: #e8f1f2;
+    display: flex;
+}
+
+.logo img {
+    width: 150px;
+    margin-top: -20px;
+    margin-left: -10px;
+    position: relative;
+}
+
+.logo svg {
+    width: 150px;
+    margin-top: -10px;
+    position: absolute;
+    size: 100px;
+}
+
+.user {
+    border: 2px solid white;
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    border-radius: 20px;
+    width: 35px;
+    margin-top: -55px;
+    margin-left: 25px;
+    color: whitesmoke;
+}
+
+.profile img {
+    position: absolute;
+    border-radius: 20px;
+    width: 35px;
+    margin-top: 35px;
+    margin-left: -30px;
+}
+
+.name {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 45px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Gap between the menu items */
+    margin-top: 20px;
+}
+
+.option {
+    border: 2px solid #e8f1f2;
+    padding: auto;
+    background-color: #c2e8f8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hometext {
+    color: black;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.icon {
+    display: flex;
+    align-items: centre;
+}

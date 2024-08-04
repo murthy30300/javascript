@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert and remove elements</title>
+</head>
+<body>
+    <div class="container BGGREEN">
+        <div class="box" data-createdby="murthy" data-conceptby="venkat" style="display: flex;">Maii bhi box huh</div>
+        <div class="box">Maii bhi box huh2</div>
+    </div>
+    <script>
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend","<b> i am murthy insert end</b>")
+        // let div = document.createElement("div");
+        // div.innerHTML = "I have been inserted <b>by vishnu</b>"
+        // div.setAttribute("class","created")
+        // document.querySelector(".container").append(div)
+        // //prepend,before,after......
+//        ' document.querySelector(".box").hasAttribute("style")
+// true
+// document.querySelector(".box").setAttribute("style","display: inline")
+// undefined
+// document.querySelector(".box").getAttribute("style")
+// 'display: inline'
+// document.querySelector(".box").attributes
+// NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}'
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch YouTube Video</title>
+</head>
+<body>
+    <h2>Watch YouTube Video</h2>
+    <a href="javascript:void(0);" onclick="loadVideo('https://www.youtube.com/embed/ITc09gOrqZk?autoplay=1');">Watch Video</a> 
+    <br><br>
+    <iframe id="videoFrame" width="560" height="315" style="display:none;" frameborder="0" allowfullscreen></iframe>
+    
+    <script>
+        function loadVideo(videoLink) {
+            var videoFrame = document.getElementById("videoFrame");
+            videoFrame.src = videoLink;
+            videoFrame.style.display = "block";
+        }
+    </script>
+</body>
+</html>

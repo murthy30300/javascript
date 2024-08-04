@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event building</title>
+    <style>
+        .child{
+            background-color: blue;
+            border: 2px solid black;
+            padding: 14px;
+            margin:14px;
+            cursor: pointer;
+        }
+        .childContainer{
+            background-color: red;
+            padding:14px ;
+            margin: 14px;
+
+        }
+        .container{
+            background-color: rgb(111, 180, 27);
+            padding:14px ;
+            margin: 14px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", () => {
+           // e.stopPropagation()
+            alert("child was clicked")
+        })
+        document.querySelector(".childContainer").addEventListener("click", () => {
+            
+            alert("childContainer was clicked")
+        })
+        document.querySelector(".container").addEventListener("click", () => {
+            alert("Container was clicked")
+        })
+    </script>
+</body>
+
+</html>

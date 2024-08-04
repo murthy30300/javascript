@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .sidebar {
+            background-color: #001f3f;
+            width: 250px;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+
+        .sidebar img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h3 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .sidebar p {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px 0;
+            width: 100%;
+            text-align: center;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #0069d9;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content h1 {
+            margin: 0 0 20px 0;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #001f3f;
+            color: #fff;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .tabs button.active {
+            background-color: #ff851b;
+        }
+
+        .table-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .status-completed {
+            color: green;
+        }
+
+        .status-ongoing {
+            color: orange;
+        }
+
+        .status-pending {
+            color: red;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .pagination button:disabled {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="Resource/Images/klu logo 1.svg" alt="Profile Picture">
+        <h3>Hi, Alex</h3>
+        <p>E173037</p>
+        <a href="#">Home</a>
+        <a href="#">My Courses</a>
+        <a href="#">Assignments</a>
+        <a href="#">Time Table</a>
+        <a href="#">Forum</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="content">
+        <h1>My Courses</h1>
+        <div class="tabs">
+            <button class="active">Semester 01</button>
+            <button>Semester 02</button>
+            <button>Semester 03</button>
+            <button>Semester 04</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Module</th>
+                        <th>Title</th>
+                        <th>Unit</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td>Module 01</td>
+                        <td>Programming</td>
+                        <td>Unit 01</td>
+                        <td class="status-completed">Completed</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td>Module 02</td>
+                        <td>Networking</td>
+                        <td>Unit 01</td>
+                        <td class="status-ongoing">Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td>Module 03</td>
+                        <td>Database</td>
+                        <td>Unit 01</td>
+                        <td class="status-pending">Pending</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td>Module 04</td>
+                        <td>Professional Practice</td>
+                        <td>Unit 01</td>
+                        <td class="status-pending">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button disabled>Previous</button>
+                <button>Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
